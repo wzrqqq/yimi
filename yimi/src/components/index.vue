@@ -116,14 +116,11 @@
 		</footer>
 	</div>
 </template>
-
 <script>
 	export default{
 		name:'index',
 		data:function(){
-			return{
-				
-			}
+			return{}
 		},
 		mounted(){
 			this.$router.push({name:'home'});
