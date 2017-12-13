@@ -67,7 +67,45 @@
 							<img src=""/>
 						</div>
 					</div>
-					<div class="down"></div>
+					<div class="down">
+						<ul class="news">
+							<li>
+								<a href="">
+									关于我们
+								</a>
+							</li>
+							<li>
+								<a href="">
+									新闻动态
+								</a>
+							</li>
+							<li>
+								<a href="">
+									工作机会
+								</a>
+							</li>
+							<li>
+								<a href="">
+									商务合作
+								</a>
+							</li>
+							<li>
+								<a href="">
+									会员中心
+								</a>
+							</li>
+							<li>
+								<a href="">
+									意见反馈
+								</a>
+							</li>
+							<li>
+								<a href="">
+									联系我们
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div class="bottom">
@@ -241,6 +279,31 @@ footer > .top > .content > .up > .erweima{
 	height: 157px;
 	margin-top: 10px;
 	background: lavender;
+}
+footer > .top > .content > .down{
+	width: 100%;
+	height: 20px;
+}
+footer > .top > .content > .down > .news{
+	width: 840px;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+footer > .top > .content > .down > .news > li{
+	width: 120px;
+	height: 100%;
+	border-right: 1px solid white;
+}
+footer > .top > .content > .down > .news > li > a{
+	display: block;
+	text-align: center;
+	color: white;
+	font-size: 14px;
+}
+footer > .top > .content > .down > .news > li:last-of-type{
+	border: none;
 }
 footer > .bottom > .content{
 	width: 1200px;
