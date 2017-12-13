@@ -124,7 +124,11 @@
 			return{
 				
 			}
+		},
+		mounted(){
+			this.$router.push({name:'home'});
 		}
+		
 	}
 </script>
 
@@ -249,7 +253,7 @@ footer > .top > .content > .up .message > li > h3{
 	height: 100%;
 	line-height: 53px;
 	font-weight: normal;
-	font-size: 20px;
+	font-size: 14px;
 	color: white;
 }
 footer > .top > .content > .up > .search{
@@ -301,6 +305,7 @@ footer > .top > .content > .down > .news > li > a{
 	text-align: center;
 	color: white;
 	font-size: 14px;
+	font-weight: bold;
 }
 footer > .top > .content > .down > .news > li:last-of-type{
 	border: none;
