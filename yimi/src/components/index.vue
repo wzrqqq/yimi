@@ -132,6 +132,8 @@
 </script>
 
 <style>
+	/*@import url("../assets/css/admin.css");	
+	@import url("../assets/css/pintuer.css");*/
 *{
 	margin: 0;
 	padding: 0;

@@ -101,18 +101,104 @@
 		<section class="Style">
 			<ul class="content">
 				<li><a href=""><img src="../assets/img/brand1.png"/></a></li>
-				<li><a href=""><div class="title"><h1>现代风格</h1><span>CHANPIN</span></div><p>丰富的储物空间，化繁为简的设计，充分发挥了现代艺与定制所长 </p></a></li>
+				<li><a href=""><div class="title"><h1>现代风格</h1><span>CHANPIN</span></div><p>丰富的储物空间，化繁为简的设计，充分发挥了现代艺与定制所长 </p><button></button></a></li>
 				<li><a href=""><img src="../assets/img/brand1.png"/></a></li>
-				<li><a href=""></a></li>
+				<li><a href=""><div class="title"><h1>现代风格</h1><span>CHANPIN</span></div><p>丰富的储物空间，化繁为简的设计，充分发挥了现代艺与定制所长 </p><button></button></a></li>
 				<li><a href=""><img src="../assets/img/brand1.png"/></a></li>
-				<li><a href=""></a></li>
+				<li><a href=""><div class="title"><h1>现代风格</h1><span>CHANPIN</span></div><p>丰富的储物空间，化繁为简的设计，充分发挥了现代艺与定制所长 </p><button></button></a></li>
 				<li><a href=""><img src="../assets/img/brand1.png"/></a></li>
-				<li><a href=""></a></li>
+				<li><a href=""><div class="title"><h1>现代风格</h1><span>CHANPIN</span></div><p>丰富的储物空间，化繁为简的设计，充分发挥了现代艺与定制所长 </p><button></button></a></li>
 				<li><a href=""><img src="../assets/img/brand1.png"/></a></li>
-				<li><a href=""></a></li>
+				<li><a href=""><div class="title"><h1>现代风格</h1><span>CHANPIN</span></div><p>丰富的储物空间，化繁为简的设计，充分发挥了现代艺与定制所长 </p><button></button></a></li>
 			</ul>
 		</section>
 		<!--style结束-->
+		
+		<!--案例开始-->
+		<section class="case">
+			<div class="content">
+				<div class="box">
+					<h3>案例展示<span>COMPANYPROFIENT</span></h3>
+				</div>
+			</div>
+		</section>
+		<!--案例结束-->
+		
+		<!--circle开始-->
+		<section class="circle">
+			<!--<ul class="box">
+				<li><img src="../assets/img/case2.png"/></li>
+				<li><img src="../assets/img/case2.png"/></li>
+				<li><img src="../assets/img/case2.png"/></li>
+				<li><img src="../assets/img/case2.png"/></li>
+				<li><img src="../assets/img/case2.png"/></li>
+			</ul>-->
+			<div class="box">
+				<el-carousel  :interval="4000" type="card" height="390px">
+			    <el-carousel-item class="qqq" v-for="item in 6" :key="item">
+			      <h3>{{ item }}</h3>
+			    </el-carousel-item>
+			  </el-carousel>
+			</div>
+		</section>
+		<!--circle结束-->
+		
+		<!--案例开始-->
+		<section class="news">
+			<div class="content">
+				<div class="box">
+					<h3>新闻中心<span>COMPANYPROFIENT</span></h3>
+				</div>
+			</div>
+		</section>
+		<!--案例结束-->
+		
+		<!--newslist开始-->
+		<!--<section class="newsList">
+			<ul class="content">
+				<li>
+					<a href="">
+						<img src="" alt="" />
+						<div class="right">
+							<img src="../assets/img/add.png"/>
+							<h3>沙发展示</h3>
+							img
+						</div>
+					</a>
+				</li>
+			</ul>
+		</section>-->
+		<!--newslist结束-->
+		
+		<!--关于我们开始-->
+		<section class="news">
+			<div class="content">
+				<div class="box">
+					<h3>关于我们<span>COMPANYPROFIENT</span></h3>
+				</div>
+			</div>
+		</section>
+		<!--关于我们结束-->
+		
+		<!--视频开始-->
+		<section class="Video">
+			<template>
+			  <el-carousel :interval="4000" type="card" height="836px">
+			    <el-carousel-item v-for="item in 6" :key="item">
+			      <h3>{{ item }}</h3>
+			    </el-carousel-item>
+			  </el-carousel>
+			</template>
+		</section>
+		<!--视频结束-->
+		
+		<!--map开始-->
+		<section class="map">
+			<div class="content">
+				
+			</div>
+		</section>
+		<!--map结束-->
 	</div>
 </template>
 
@@ -128,6 +214,13 @@
 </script>
 
 <style>
+	.qqq{
+		width: 390px;
+		height: 390px;
+		border-radius: 50%;
+	}
+	/*@import url("../assets/css/admin.css");	
+	@import url("../assets/css/pintuer.css");*/
 	*{
 	margin: 0;
 	padding: 0;
@@ -137,6 +230,14 @@
 }
 a{
 	text-decoration: none;
+}
+
+body{
+	width: 100%;
+	position: relative;
+}
+html{
+	width: 100%;
 }
 /*banner*/
 section.banner{
@@ -329,6 +430,15 @@ section.Style > .content > li > a > .title > span{
 	text-align: center;
 	color: white;
 }
+section.Style > .content > li > a > button{
+	background: url(../assets/img/more.png) no-repeat center;
+	border: none;
+	outline: none;
+	display: block;
+	width: 83px;
+	height: 30px;
+	margin: 0 auto;
+}
 section.Style > .content > li > a > p{
 	width: 100%;
 	height: 110px;
@@ -339,4 +449,111 @@ section.Style > .content > li > a > p{
 section.Style > .content > li:nth-of-type(2n) > a .title{
 	background:url(../assets/img/kuang_08.png) no-repeat center;
 }
+
+
+/*案例开始*/
+section.case{
+	width: 100%;
+	height: 266px;
+}
+section.case > .content{
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+}
+section.case > .content > .box{
+	width: 503px;
+	height: 100%;
+	margin: 0 auto;
+	background: url(../assets/img/topbotton.png) no-repeat;
+	background-size:100% ;
+	background-position: 0 50%;
+	overflow: hidden;
+}
+section.case > .content > .box > h3{
+	text-align: center;
+	margin-top: 150px;
+	color: white;
+	font-size: 20px;
+}
+section.case > .content > .box > h3 > span{
+	font-weight: normal;
+	font-size: 18px;
+}
+
+/*circle开始*/
+section.circle{
+	width: 100%;
+	height: 390px;
+}
+section.circle > .box{
+	width: 800px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+/*新闻中心开始*/
+section.news{
+	width: 100%;
+	height: 266px;
+}
+section.news > .content{
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+}
+section.news > .content > .box{
+	width: 503px;
+	height: 100%;
+	margin: 0 auto;
+	background: url(../assets/img/topbotton.png) no-repeat;
+	background-size:100% ;
+	background-position: 0 50%;
+	overflow: hidden;
+}
+section.news > .content > .box > h3{
+	text-align: center;
+	margin-top: 150px;
+	color: white;
+	font-size: 20px;
+}
+section.news > .content > .box > h3 > span{
+	font-weight: normal;
+	font-size: 18px;
+}
+
+/*Video开始*/
+section.Video{
+	width: 100%;
+	height: 836px;
+	margin-bottom: 326px;
+}
+.el-carousel__item h3 {
+    color: #475669;
+    font-size: 14px;
+    opacity: 0.75;
+    line-height: 200px;
+    margin: 0;
+  }
+  .el-carousel__item:nth-child(2n) {
+    background-color: #99a9bf;
+  }
+  .el-carousel__item:nth-child(2n+1) {
+    background-color: #d3dce6;
+  }
+
+/*map开始*/
+section.map{
+	width: 100%;
+	height: 504px;
+	position: absolute;
+	bottom: 512px;
+}
+section.map > .content{
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	background: pink;
+}
+
 </style>

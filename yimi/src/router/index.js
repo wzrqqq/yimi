@@ -10,8 +10,8 @@ import about from '../components/about.vue'
 import contact from '../components/contact.vue'
 
 // admin
-import admin from '../components/admin/index.vue'
-import login from '../components/admin/login.vue'
+/*import admin from '../components/admin/index.vue'
+import login from '../components/admin/login.vue'*/
 
 Vue.use(Router)
 Vue.use(ElementUI)
@@ -50,7 +50,7 @@ export default new Router({
     		}
 	    	]
 		    },
-				{
+				/*{
 					path: '/admin',
 					name: 'admin',
 					component: admin,
@@ -61,6 +61,6 @@ export default new Router({
 							component: login
 						},
 					]
-				}
+				}*/
 		]
 })
