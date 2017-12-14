@@ -124,9 +124,6 @@
 			return{
 				
 			}
-		},
-		mounted(){
-			this.$router.push({name:'home'});
 		}
 		
 	}
