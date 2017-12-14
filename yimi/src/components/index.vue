@@ -116,7 +116,6 @@
 		</footer>
 	</div>
 </template>
-
 <script>
 	export default{
 		name:'index',
@@ -124,6 +123,9 @@
 			return{
 				
 			}
+		},
+		mounted(){
+			this.$router.push({name:'home'});
 		}
 		
 	}
