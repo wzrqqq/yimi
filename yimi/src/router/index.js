@@ -8,7 +8,7 @@ import product from '../components/product.vue'
 import branding from '../components/branding.vue'
 import about from '../components/about.vue'
 import contact from '../components/contact.vue'
-
+import proDetails from '../components/proDetails.vue'
 // admin
 /*import admin from '../components/admin/index.vue'
 import login from '../components/admin/login.vue'*/
@@ -47,6 +47,11 @@ export default new Router({
     			path:'contact',
 		    	name:'contact',
 		    	component:contact,
+    		},
+    		{
+    			path:'proDetails',
+		    	name:'proDetails',
+		    	component:proDetails,
     		}
 	    	]
 		    },

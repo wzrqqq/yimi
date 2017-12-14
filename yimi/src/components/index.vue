@@ -47,16 +47,16 @@
 					<div class="up">
 						<ul class="message">
 							<li>
-								<img src="" alt="" />
+								<img src="../assets/img/iconphone.png" alt="" />
 								<h3>400-857-368</h3>
 							</li>
 							<li>
-								<img src="" alt="" />
-								<h3>400-857-368</h3>
+								<img src="../assets/img/iconaddress.png" alt="" />
+								<h3>山西省太原市平阳路学府街</h3>
 							</li>
 							<li>
-								<img src="" alt="" />
-								<h3>400-857-368</h3>
+								<img src="../assets/img/iconemail.png" alt="" />
+								<h3>wzrqqq@qq.com</h3>
 							</li>
 						</ul>
 						<div class="search">
@@ -231,7 +231,7 @@ footer > .top > .content > .up{
 	justify-content: space-between;
 }
 footer > .top > .content > .up .message{
-	width: 329px;
+	width: 300px;
 	height: 100%;
 }
 footer > .top > .content > .up .message > li{
@@ -283,6 +283,7 @@ footer > .top > .content > .up > .erweima{
 	width: 157px;
 	height: 157px;
 	margin-top: 10px;
+	margin-left: 80px;
 	background: lavender;
 }
 footer > .top > .content > .down{
