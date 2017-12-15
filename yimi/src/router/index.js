@@ -9,6 +9,7 @@ import branding from '../components/branding.vue'
 import about from '../components/about.vue'
 import contact from '../components/contact.vue'
 import proDetails from '../components/proDetails.vue'
+import brandDetails from '../components/brandDetails.vue'
 // admin
 /*import admin from '../components/admin/index.vue'
 import login from '../components/admin/login.vue'*/
@@ -24,7 +25,7 @@ export default new Router({
     	component:index,
     	children:[
     		{
-    			path:'home',
+    			path:'/',
 		    	name:'home',
 		    	component:home,
     		},
@@ -52,6 +53,11 @@ export default new Router({
     			path:'proDetails',
 		    	name:'proDetails',
 		    	component:proDetails,
+    		},
+    		{
+    			path:'brandDetails',
+		    	name:'brandDetails',
+		    	component:brandDetails,
     		}
 	    	]
 		    },

@@ -8,34 +8,34 @@
 				</div>
 				<ul class="nav">
 					<li>
-						<a href="">
+						<router-link :to="{name:'home'}">
 							<span>首 页</span>
 							<span>HOME</span>
-						</a>
+						</router-link>
 					</li>
 					<li>
-						<a href="">
+						<router-link :to="{name:'about'}">
 							<span>关于我们</span>
 							<span>ABOUT US</span>
-						</a>
+						</router-link>
 					</li>
 					<li>
-						<a href="">
+						<router-link :to="{name:'product'}">
 							<span>产品中心</span>
 							<span>PRODUCT</span>
-						</a>
+						</router-link>
 					</li>
 					<li>
-						<a href="">
+						<router-link :to="{name:'branding'}">
 							<span>品牌中心</span>
 							<span>BRANDING</span>
-						</a>
+						</router-link>
 					</li>
 					<li>
-						<a href="">
+						<router-link :to="{name:'contact'}">
 							<span>联系我们</span>
 							<span>CONTACT</span>
-						</a>
+						</router-link>
 					</li>
 				</ul>
 			</div>

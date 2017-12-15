@@ -211,7 +211,7 @@
 		<!--视频开始-->
 		<section class="Video">
 			<template>
-			  <el-carousel :interval="4000" type="card" height="836px">
+			  <el-carousel :interval="4000" type="card" height="600px">
 			    <el-carousel-item v-for="item in 6" :key="item">
 			      <h3>{{ item }}</h3>
 			    </el-carousel-item>
@@ -238,9 +238,9 @@
 				
 			}
 		},
-		mounted(){
+		/*mounted(){
 			this.$router.push('home');
-		}
+		}*/
 	}
 </script>
 
@@ -558,7 +558,7 @@ section.news > .content > .box > h3 > span{
 /*Video开始*/
 section.Video{
 	width: 100%;
-	height: 836px;
+	height: 700px;
 	margin-bottom: 326px;
 }
 .el-carousel__item h3 {
