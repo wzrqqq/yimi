@@ -1,20 +1,24 @@
 <template>
 	<div>
-		<ul class="banner">
+		<div class="bannerbox">
 			<ul class="dots">
-				<li></li>
+				<li class="gray"></li>
 				<li></li>
 				<li></li>
 				<li></li>
 			</ul>
-			<li>
-				<div class="title">美好<span>&</span>现代</div>
-				<div class="desc">不变的是阳光下那张没有任何修饰和真实而明媚的笑脸</div>
-				<div class="desc desc1">如此简单幸福</div>
-				<div class="more"><a href=""><img src="../assets/img/tmore.png" height="30" width="84" alt=""></a></div>
-			</li>
+			<ul class="banner">
+				<transition name="fade" >
+				<li v-for="li in state" v-if="li.flag" :key="li.key">
+					<div class="title">{{li.text}}<span>{{li.key}}</span></div>
+					<div class="desc">不变的是阳光下那张没有任何修饰和真实而明媚的笑脸</div>
+					<div class="desc desc1">如此简单幸福</div>
+					<div class="more"><a href=""><img src="../assets/img/tmore.png" height="30" width="84" alt=""></a></div>
+				</li>
+				</transition>
+			</ul>
 
-		</ul>
+		</div>
 		<main>
 			<div class="main">
 				
@@ -137,7 +141,45 @@
 
 <script>
 	export default{
-		name: 'branding'
+		name: 'product',
+		data(){
+			return {
+				state:[
+					{flag:true,key:1,text:'不变的是'},
+					{flag:false,key:2,text:'阳光下'},
+					{flag:false,key:3,text:'那张没有任何修饰'},
+					{flag:false,key:4,text:'真实而明媚的笑脸'}
+				],
+				data: []
+			}
+		},
+		methods:{
+			lunbo(){
+				let dots = document.querySelector('.dots');
+				let dot = dots.querySelectorAll('li');
+				let now = 0;
+				function nextp(){
+					now++;
+					if(now >= dot.length){
+						now = 0;
+					}
+					for(let i=0;i<dot.length;i++){
+						this.state[i]['flag'] = false;
+						dot[i].className = '';
+					}
+					this.state[now]['flag'] = true;
+					dot[now].className = 'gray';
+				}
+				let ne = nextp.bind(this);
+				let t = setInterval(ne, 3000);
+			}
+		},
+		mounted(){
+			this.$http.get('/yimihome/core/get.php?tb=5').then(res=>{
+				this.data = res.body;
+			})
+			this.lunbo();
+		}
 	}
 </script>
 <style>
@@ -146,14 +188,13 @@ img{
 	width: 100%;
 	height: 100%;
 }
-.banner{
+.bannerbox{
 	width: 100%;
 	height: 692px;
-	background: skyblue;
 	overflow: hidden;
 	position: relative;
 }
-.banner > .dots{
+.bannerbox > .dots{
 	width: 75px;
 	height: 12px;
 	position: absolute;
@@ -162,6 +203,7 @@ img{
 	bottom: 170px;
 	display: flex;
 	justify-content: space-between;
+	z-index: 9;
 }
 .dots > li{
 	width: 12px;
@@ -169,10 +211,33 @@ img{
 	border-radius: 50%;
 	background: #fff;
 }
+.dots > li > a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.dots > .gray{
+	background: gray;
+}
+.banner{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
 .banner > li{
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
 	text-align: center;
+	background: skyblue; 
+	transition: all .5s;
+}
+.banner > .active{
+	z-index: 2;
 }
 .banner > li > .title{
 	margin-top: 152px;
@@ -216,6 +281,7 @@ main{
 	position: relative;
 	top: -120px;
 	background: #fff;
+	z-index: 9;
 }
 .product{
 	width: 100%;

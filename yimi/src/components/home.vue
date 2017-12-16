@@ -29,7 +29,7 @@
 								<span>ENJOY LIFE</span>
 								<p>企业的确立，最重要的是产品的综合素质，通过啥的凯撒大手大脚好看撒党的十九大黑科技三北京第三</p>
 							</div>
-							<a href="" class="aa"><img src="../assets/img/pro_more_05.png"/></a>
+							<a href=""><img src="../assets/img/pro_more_05.png"/></a>
 						</a>
 					</li>
 					<li>
@@ -40,7 +40,7 @@
 								<span>ENJOY LIFE</span>
 								<p>企业的确立，最重要的是产品的综合素质，通过啥的凯撒大手大脚好看撒党的十九大黑科技三北京第三</p>
 							</div>
-							<a href="" class="aa"><img src="../assets/img/pro_more_05.png"/></a>
+							<a href=""><img src="../assets/img/pro_more_05.png"/></a>
 						</a>
 					</li>
 					<li>
@@ -51,7 +51,7 @@
 								<span>ENJOY LIFE</span>
 								<p>企业的确立，最重要的是产品的综合素质，通过啥的凯撒大手大脚好看撒党的十九大黑科技三北京第三</p>
 							</div>
-							<a href="" class="aa"><img src="../assets/img/pro_more_05.png"/></a>
+							<a href=""><img src="../assets/img/pro_more_05.png"/></a>
 						</a>
 					</li>
 					<li>
@@ -62,7 +62,7 @@
 								<span>ENJOY LIFE</span>
 								<p>企业的确立，最重要的是产品的综合素质，通过啥的凯撒大手大脚好看撒党的十九大黑科技三北京第三</p>
 							</div>
-							<a href="" class="aa"><img src="../assets/img/pro_more_05.png"/></a>
+							<a href=""><img src="../assets/img/pro_more_05.png"/></a>
 						</a>
 					</li>
 					<li>
@@ -73,7 +73,7 @@
 								<span>ENJOY LIFE</span>
 								<p>企业的确立，最重要的是产品的综合素质，通过啥的凯撒大手大脚好看撒党的十九大黑科技三北京第三</p>
 							</div>
-							<a href="" class="aa"><img src="../assets/img/pro_more_05.png"/></a>
+							<a href=""><img src="../assets/img/pro_more_05.png"/></a>
 						</a>
 					</li>
 					<li>
@@ -84,7 +84,7 @@
 								<span>ENJOY LIFE</span>
 								<p>企业的确立，最重要的是产品的综合素质，通过啥的凯撒大手大脚好看撒党的十九大黑科技三北京第三</p>
 							</div>
-							<a href="" class="aa"><img src="../assets/img/pro_more_05.png"/></a>
+							<a href=""><img src="../assets/img/pro_more_05.png"/></a>
 						</a>
 					</li>
 				</ul>
@@ -154,48 +154,20 @@
 		<!--案例结束-->
 		
 		<!--newslist开始-->
-		<section class="newsList">
+		<!--<section class="newsList">
 			<ul class="content">
-				<ul class="comment">
-						<li>
-							<div class="image"><img src="../assets/img/product1.png" alt=""></div>
-							<div class="text">
-								<div class="tit">美而不宜，自然而然</div>
-								<div class="titimg"><img src="../assets/img/snow.png" height="35" width="113" alt=""></div>
-								<div class="content">如今加色地板大量充斥市场，这是中国地板行业不健康的原因，先是大家拼价格，没利润了，再在地板质量上下功夫，很多商家利用了后期的修补板子，而为了让你看不出是修补后的板子，只有在板面着色，做的好的在槽口和背面也着色，这样你就看不出这是着色板，而且色差小，板面漂亮</div>
-								<div class="time">
-									<span class="bdian"></span><span>2017-12-14</span>
-									<span class="ydian"></span><span>3000浏览</span>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="image"><img src="../assets/img/product1.png" alt=""></div>
-							<div class="text">
-								<div class="tit">美而不宜，自然而然</div>
-								<div class="titimg"><img src="../assets/img/snow.png" height="35" width="113" alt=""></div>
-								<div class="content">如今加色地板大量充斥市场，这是中国地板行业不健康的原因，先是大家拼价格，没利润了，再在地板质量上下功夫，很多商家利用了后期的修补板子，而为了让你看不出是修补后的板子，只有在板面着色，做的好的在槽口和背面也着色，这样你就看不出这是着色板，而且色差小，板面漂亮</div>
-								<div class="time">
-									<span class="bdian"></span><span>2017-12-14</span>
-									<span class="ydian"></span><span>3000浏览</span>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="image"><img src="../assets/img/product1.png" alt=""></div>
-							<div class="text">
-								<div class="tit">美而不宜，自然而然</div>
-								<div class="titimg"><img src="../assets/img/snow.png" height="35" width="113" alt=""></div>
-								<div class="content">如今加色地板大量充斥市场，这是中国地板行业不健康的原因，先是大家拼价格，没利润了，再在地板质量上下功夫，很多商家利用了后期的修补板子，而为了让你看不出是修补后的板子，只有在板面着色，做的好的在槽口和背面也着色，这样你就看不出这是着色板，而且色差小，板面漂亮</div>
-								<div class="time">
-									<span class="bdian"></span><span>2017-12-14</span>
-									<span class="ydian"></span><span>3000浏览</span>
-								</div>
-							</div>
-						</li>
-					</ul>
+				<li>
+					<a href="">
+						<img src="" alt="" />
+						<div class="right">
+							<img src="../assets/img/add.png"/>
+							<h3>沙发展示</h3>
+							img
+						</div>
+					</a>
+				</li>
 			</ul>
-		</section>
+		</section>-->
 		<!--newslist结束-->
 		
 		<!--关于我们开始-->
@@ -211,7 +183,7 @@
 		<!--视频开始-->
 		<section class="Video">
 			<template>
-			  <el-carousel :interval="4000" type="card" height="600px">
+			  <el-carousel :interval="4000" type="card" height="836px">
 			    <el-carousel-item v-for="item in 6" :key="item">
 			      <h3>{{ item }}</h3>
 			    </el-carousel-item>
@@ -222,7 +194,7 @@
 		
 		<!--map开始-->
 		<section class="map">
-			<div class="content">
+			<div id="allmap">
 				
 			</div>
 		</section>
@@ -237,10 +209,7 @@
 			return{
 				
 			}
-		},
-		/*mounted(){
-			this.$router.push('home');
-		}*/
+		}
 	}
 </script>
 
@@ -378,14 +347,10 @@ section.product > .content > .proList > li > a{
 	border-radius: 4px 4px 0 0;
 }
 section.product > .content > .proList > li > a:hover{
-	border-top-color:#FFD570;
-}
-section.product > .content > .proList > li > a:hover .aa{
-	display: block;
+	border-top: 4px solid #FFD570;
 }
 section.product > .content > .proList > li > a > img{
 	height: 283px;
-	width: 100%;
 }
 section.product > .content > .proList > li > a > .describe{
 	width: 100%;
@@ -411,7 +376,9 @@ section.product > .content > .proList > li > a > .describe > p{
 section.product > .content > .proList > li > a > a{
 	display: none;
 }
-
+section.product > .content > .proList > li:first-of-type > a > a{
+	display: block;
+}
 
 /*bed开始*/
 section.bedPicture{
@@ -558,7 +525,7 @@ section.news > .content > .box > h3 > span{
 /*Video开始*/
 section.Video{
 	width: 100%;
-	height: 700px;
+	height: 836px;
 	margin-bottom: 326px;
 }
 .el-carousel__item h3 {
@@ -574,80 +541,7 @@ section.Video{
   .el-carousel__item:nth-child(2n+1) {
     background-color: #d3dce6;
   }
-  
-  
-  
-section.newsList{
-	width: 100%;
-	height: 740px;
-	margin-bottom: 78px;
-}
-section.newsList > .content{
-	width: 1200px;
-	height: 100%;
-	margin: 0 auto;
-}
-.comment{
-	margin-top: 100px;
-	width: 100%;
-	height: 740px;
-	display: flex;
-	flex-wrap: wrap;
-	align-content: space-between;
-}
-.comment > li{
-	width: 100%;
-	height: 218px;
-	padding-right: 30px;
-	display: flex;
-	justify-content: space-between;
-}
-.comment > li > .image{
-	width: 300px;
-	height: 100%;
-}
-.comment > li > .text{
-	width: 745px;
-	height: 100%;
-}
-.text > .tit{
-	 font-size: 20px;
-	 margin-top: 18px;
-}
-.text > .titimg{
-	width: 113px;
-	height: 35px;
-	margin-top: 10px;
-}
-.text > .content{
-	margin-top: 10px;
-	color: #8B8B8B;
-	width: 100%;
-	height: 72px;
-	line-height: 24px;
-	font-size: 14px;
-}
-.text > .time{
-	height: 12px;
-	color: #C6C6C6;
-	margin-top: 20px;
-}
-.ydian,.bdian{
-	display: inline-block;
-	width: 12px;
-	height: 12px;
-	border-radius: 50%;
-}
-.ydian{
-	background: #FFD570;
-	margin-left: 20px;
-	margin-right: 2px;
-}
-.bdian{
-	background: #4D7BEF;
-	margin-left: 2px;
-	margin-right: 2px;
-}
+
 /*map开始*/
 section.map{
 	width: 100%;
@@ -655,7 +549,7 @@ section.map{
 	position: absolute;
 	bottom: 512px;
 }
-section.map > .content{
+#allmap{
 	width: 1200px;
 	height: 100%;
 	margin: 0 auto;

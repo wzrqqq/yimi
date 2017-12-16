@@ -55,12 +55,13 @@
 						<div class="toptitle">意/见/留/言</div>
 					</div>
 					<ul class="msg">
-						<li><input type="text" name="name" placeholder="请输入您的姓名"></li>
-						<li><input type="text" name="tel" placeholder="请输入您的电话"></li>
-						<li><input type="text" name="email" placeholder="请输入您的邮箱"></li>
+						<li><span class="iconfont icon-geren"></span><input v-model="name" type="text" name="name" placeholder="请输入您的姓名"></li>
+						<li><span class="iconfont icon-shouji"></span><input v-model="tel" type="text" name="tel" placeholder="请输入您的电话"></li>
+						<li><span class="iconfont icon-youxiang"></span><input v-model="email" type="text" name="email" placeholder="请输入您的邮箱"></li>
 					</ul>
-					<div class="textbox" contenteditable="true"></div>
-					<div class="submit">提交</div>
+					<textarea v-model="opinion" class="textbox" ></textarea>
+					<!-- <div class="textbox" v-model="opinion" contenteditable="true"></div> -->
+					<div @click="sub" class="submit">提交</div>
 				</div>
 			</div>
 		</main>
@@ -69,7 +70,20 @@
 
 <script>
 	export default{
-		name: 'contact'
+		name: 'contact',
+		data(){
+			return {
+				name: '',
+				tel: '',
+				email: '',
+				opinion: ''
+			}
+		},
+		methods:{
+			sub(){
+				
+			}
+		}
 	}
 </script>
 <style>
@@ -242,11 +256,13 @@ main{
 	align-items: center;
 }
 .msg > li > input{
+	margin-left: 4px;
 	width: 230px;
 	border: none;
 	outline: none;
 }
 .textbox{
+	display: block;
 	padding: 20px;
 	line-height: 20px;
 	margin-top: 40px;
@@ -254,6 +270,7 @@ main{
 	height: 353px;
 	border: 1px solid #000;
 	border-radius: 5px;
+	resize: none;
 }
 .submit{
 	margin: 100px auto;
