@@ -3,39 +3,39 @@
 		<header>
 			<div class="content">
 				<div class="logo">
-					<img src="../assets/img/logo.png" alt="" />
+					<img src="../assets/img/logo.png" height="99" width="61" alt="" />
 					<h1>YIMIJIAJU</h1>
 				</div>
 				<ul class="nav">
-					<li>
-						<router-link :to="{name:'home'}">
+					<li id="home">
+						<a href="#/">
 							<span>首 页</span>
 							<span>HOME</span>
-						</router-link>
+						</a>
 					</li>
-					<li>
-						<router-link :to="{name:'about'}">
+					<li id="about">
+						<a href="#/about">
 							<span>关于我们</span>
 							<span>ABOUT US</span>
-						</router-link>
+						</a>
 					</li>
-					<li>
-						<router-link :to="{name:'product'}">
+					<li id="product">
+						<a href="#/product">
 							<span>产品中心</span>
 							<span>PRODUCT</span>
-						</router-link>
+						</a>
 					</li>
-					<li>
-						<router-link :to="{name:'branding'}">
+					<li id="branding">
+						<a href="#/branding">
 							<span>品牌中心</span>
 							<span>BRANDING</span>
-						</router-link>
+						</a>
 					</li>
-					<li>
-						<router-link :to="{name:'contact'}">
+					<li id="contact">
+						<a href="#/contact">
 							<span>联系我们</span>
 							<span>CONTACT</span>
-						</router-link>
+						</a>
 					</li>
 				</ul>
 			</div>
@@ -47,16 +47,16 @@
 					<div class="up">
 						<ul class="message">
 							<li>
-								<img src="../assets/img/iconphone.png" alt="" />
+								<img src="" alt="" />
 								<h3>400-857-368</h3>
 							</li>
 							<li>
-								<img src="../assets/img/iconaddress.png" alt="" />
-								<h3>山西省太原市平阳路学府街</h3>
+								<img src="" alt="" />
+								<h3>400-857-368</h3>
 							</li>
 							<li>
-								<img src="../assets/img/iconemail.png" alt="" />
-								<h3>wzrqqq@qq.com</h3>
+								<img src="" alt="" />
+								<h3>400-857-368</h3>
 							</li>
 						</ul>
 						<div class="search">
@@ -125,15 +125,28 @@
 			}
 		},
 		mounted(){
-			this.$router.push({name:'home'});
+		  $(function(){
+			changeTab();
+			window.onhashchange = function(){
+				changeTab();
+			}
+			function changeTab(){
+				$('.nav>li').removeClass('active');
+				let hash = location.hash.substr(2);
+				hash = hash=='proDetails' ? 'product' : hash;
+				hash = hash=='brandDetails' ? 'branding' : hash;
+				if(hash){
+					$(`#${hash}`).addClass('active');
+				}else{
+					$('#home').addClass('active');
+				}
+			}
+		  })
 		}
-		
 	}
 </script>
 
 <style>
-	/*@import url("../assets/css/admin.css");	
-	@import url("../assets/css/pintuer.css");*/
 *{
 	margin: 0;
 	padding: 0;
@@ -181,6 +194,9 @@ header > .content .nav{
 header > .content .nav > li{
 	width: 119px;
 	height: 100%;
+}
+.content .nav .active{
+	background: #7A7780;
 }
 header > .content .nav > li > a{
 	padding-top: 32px;
@@ -231,7 +247,7 @@ footer > .top > .content > .up{
 	justify-content: space-between;
 }
 footer > .top > .content > .up .message{
-	width: 300px;
+	width: 329px;
 	height: 100%;
 }
 footer > .top > .content > .up .message > li{
@@ -254,7 +270,7 @@ footer > .top > .content > .up .message > li > h3{
 	height: 100%;
 	line-height: 53px;
 	font-weight: normal;
-	font-size: 14px;
+	font-size: 20px;
 	color: white;
 }
 footer > .top > .content > .up > .search{
@@ -283,7 +299,6 @@ footer > .top > .content > .up > .erweima{
 	width: 157px;
 	height: 157px;
 	margin-top: 10px;
-	margin-left: 80px;
 	background: lavender;
 }
 footer > .top > .content > .down{
@@ -307,7 +322,6 @@ footer > .top > .content > .down > .news > li > a{
 	text-align: center;
 	color: white;
 	font-size: 14px;
-	font-weight: bold;
 }
 footer > .top > .content > .down > .news > li:last-of-type{
 	border: none;
